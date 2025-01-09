@@ -6,7 +6,7 @@ COPY /dist /usr/share/nginx/html
 
 # Copy the env.js file to the correct location
 # COPY /src/assets/env.js /usr/share/nginx/html/assets/env.js
-COPY src/environments/env.js /usr/share/nginx/html/assets/env.j
+COPY src/assets/env.js /usr/share/nginx/html/assets/env.js
 
 # Copy the entrypoint script to the container
 COPY docker-entrypoint.sh /usr/share/nginx/html/
